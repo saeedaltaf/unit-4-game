@@ -1,0 +1,47 @@
+*{
+    background-color: mediumaquamarine;
+}
+body{
+    background-color: mediumaquamarine;
+}
+#headertext{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+#directionstext{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+    background-color: mediumaquamarine;
+    border: dashed black;
+    padding-bottom: 0;
+}
+p{
+    background-color: mintcream;
+}
+#images{
+    text-align: center;
+    margin-top: 20px;
+}
+#randomnumbertext{
+    background-color: mintcream;
+    border: dotted black;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    margin-top: 10px;
+}
+#scoretext{
+    background-color: mintcream;
+    border: dotted black;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    margin-top: 10px;
+}
+#winloss{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    background-color: mintcream;
+}

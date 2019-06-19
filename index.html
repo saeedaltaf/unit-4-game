@@ -2,22 +2,66 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Colour Guess</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <script src="assets/javascript/game.js" async defer></script>
-    </body>
+
+    <Div id="headertext">Colour Guess!</Div>
+    <div id="directionstext">
+        <p>You will be given a random number at the start of the game</p>
+        <p>There are four colours. By clicking on a colour, you will add a specific amount of points to your total score
+        </p>
+        <p>You win the game by matching your total score to the random number, you lose the game if your score goes over
+            the random number</p>
+        <p>The value of each colour is hidden from you until you click on it</p>
+        <p>The value of each colour is changed everytime the game starts</p>
+    </div>
+
+    <div class="container" id="gameplay">
+        <div class="row">
+          <div class="col-sm-3" id="randomnumbertext">
+            RANDOM NUMBER
+          </div>
+          <div class="col-sm-6" id="images">
+            <img src="assets/images/bluesq.png" height="100" width="100" />
+            <img src="assets/images/yellowsq.png" height="100" width="100" />
+            <img src="assets/images/redsq.png" height="100" width="100" />
+            <img src="assets/images/greensq.png" height="100" width="100" />
+          </div>
+          <div class="col-sm-3" id="scoretext">
+            SCORE
+          </div>
+        </div>
+      </div>
+
+    <section id="winloss">
+        <div id="winlosstext">YOU WON OR LOST</div>
+        <div id="winstext">WINS</div>
+        <div id="losstext">LOSSES</div>
+    </section>
+
+
+    <script src="assets/javascript/game.js" async defer></script>
+</body>
+
 </html>
