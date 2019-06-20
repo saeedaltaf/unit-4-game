@@ -6,7 +6,15 @@ $(document).ready(function () {
     $("#randomnumbertext").text("Random Number: " + randomNumber);
     console.log(randomNumber);
 
-    //Assign a random number to the colour images everytime the game starts
+    //Assign a random number to the colour images everytime the game starts:
+    var blueNumber = Math.floor(Math.random() * 10);
+    console.log("Blue Number: " + blueNumber);
+    var yellowNumber = Math.floor(Math.random() * 5);
+    console.log("Yellow Number: " + yellowNumber);
+    var redNumber = Math.floor(Math.random() * 100);
+    console.log("Red Number: " + redNumber);
+    var greenNumber = Math.floor(Math.random() * 100);
+    console.log("Green Number: " + greenNumber);
 
     //Create function to add random numbers from colours into "score"
 
