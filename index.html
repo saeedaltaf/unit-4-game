@@ -7,60 +7,60 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Colour Guess</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Colour Guess</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 
 
 </head>
 
 <body>
-    <!--[if lt IE 7]>
+  <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <Div id="headertext">Colour Guess!</Div>
-    <div id="directionstext">
-        <p>You will be given a random number at the start of the game</p>
-        <p>There are four colours. By clicking on a colour, you will add a specific amount of points to your total score
-        </p>
-        <p>You win the game by matching your total score to the random number, you lose the game if your score goes over
-            the random number</p>
-        <p>The value of each colour is hidden from you until you click on it</p>
-        <p>The value of each colour is changed everytime the game starts</p>
-    </div>
+  <Div id="headertext">Colour Guess!</Div>
+  <div id="directionstext">
+    <p>You will be given a random number at the start of the game</p>
+    <p>There are four colours. By clicking on a colour, you will add a specific amount of points to your total score
+    </p>
+    <p>You win the game by matching your total score to the random number, you lose the game if your score goes over
+      the random number</p>
+    <p>The value of each colour is hidden from you until you click on it</p>
+    <p>The value of each colour is changed everytime the game starts</p>
+  </div>
 
-    <div class="container" id="gameplay">
-        <div class="row">
-          <div class="col-sm-3" id="randomnumbertext">
-</div>
-          <div class="col-sm-6" id="images">
-            <img src="assets/images/bluesq.png" id="blue" height="100" width="100" />
-            <img src="assets/images/yellowsq.png" id ="yellow" height="100" width="100" />
-            <img src="assets/images/redsq.png" id="red" height="100" width="100" />
-            <img src="assets/images/greensq.png" id="green" height="100" width="100" />
-          </div>
-          <div class="col-sm-3" id="scoretext">
-            SCORE
-          </div>
-        </div>
+  <div class="container" id="gameplay">
+    <div class="row">
+      <div class="col-sm-3" id="randomnumbertext">
       </div>
+      <div class="col-sm-6" id="images">
+        <img src="assets/images/blue.png" id="blue" height="100" width="100" />
+        <img src="assets/images/orangesq.png" id="orange" height="100" width="100" />
+        <img src="assets/images/yellow.png" id="yellow" height="100" width="100" />
+        <img src="assets/images/purple.png" id="purple" height="100" width="100" />
+      </div>
+      <div class="col-sm-3" id="scoretext">
+        SCORE
+      </div>
+    </div>
+  </div>
 
-    <section id="winloss">
-        <div id="winlosstext">YOU WON OR LOST</div>
-        <div id="winstext"></div>
-        <div id="losstext"></div>
-    </section>
+  <section id="winloss">
+    <div id="winlosstext">YOU WON OR LOST</div>
+    <div id="winstext"></div>
+    <div id="losstext"></div>
+  </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js" async defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/game.js" async defer></script>
 </body>
 
 </html>

@@ -1,8 +1,8 @@
-*{
+/* *{
     background-color: mediumaquamarine;
-}
+} */
 body{
-    background-color: mediumaquamarine;
+    background-image: url(../images/backgroundimg.jpeg);
 }
 #headertext{
     text-align: center;
@@ -15,26 +15,26 @@ body{
     text-align: center;
     font-family: 'Righteous', cursive;
     font-size: 14px;
-    background-color: mediumaquamarine;
+    background-color: rgb(99, 144, 240);
     border: dashed black;
     padding-bottom: 0;
 }
 p{
-    background-color: mintcream;
+    background-color: rgb(223, 174, 243);
 }
 #images{
     text-align: center;
     margin-top: 20px;
 }
 #randomnumbertext{
-    background-color: mintcream;
+    background-color: #f0d660;
     border: dotted black;
     text-align: center;
     font-family: 'Righteous', cursive;
     margin-top: 10px;
 }
 #scoretext{
-    background-color: mintcream;
+    background-color: #fd7e14;
     border: dotted black;
     text-align: center;
     font-family: 'Righteous', cursive;
@@ -43,5 +43,5 @@ p{
 #winloss{
     text-align: center;
     font-family: 'Righteous', cursive;
-    background-color: mintcream;
+    /* background-color: mintcream; */
 }

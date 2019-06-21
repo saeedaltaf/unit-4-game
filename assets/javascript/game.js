@@ -18,12 +18,12 @@ $(document).ready(function () {
     //Assign a random number to the colour images everytime the game starts:
     var blueNumber = Math.floor(Math.random() * 10) + 1;
     console.log("Blue Number: " + blueNumber);
-    var yellowNumber = Math.floor(Math.random() * 5) + 1;
+    var orangeNumber = Math.floor(Math.random() * 5) + 1;
+    console.log("Orange Number: " + orangeNumber);
+    var yellowNumber = Math.floor(Math.random() * 50) + 1;
     console.log("Yellow Number: " + yellowNumber);
-    var redNumber = Math.floor(Math.random() * 50) + 1;
-    console.log("Red Number: " + redNumber);
-    var greenNumber = Math.floor(Math.random() * 100) + 1;
-    console.log("Green Number: " + greenNumber);
+    var purpleNumber = Math.floor(Math.random() * 100) + 1;
+    console.log("Purple Number: " + purpleNumber);
 
     //Reset Game function:
     function reset() {
@@ -33,12 +33,12 @@ $(document).ready(function () {
         console.log("Random Number: " + randomNumber);
         blueNumber = Math.floor(Math.random() * 10) + 1;
         console.log("Blue Number: " + blueNumber);
-        yellowNumber = Math.floor(Math.random() * 5) + 1;
+        orangeNumber = Math.floor(Math.random() * 5) + 1;
+        console.log("Orange Number: " + orangeNumber);
+        yellowNumber = Math.floor(Math.random() * 50) + 1;
         console.log("Yellow Number: " + yellowNumber);
-        redNumber = Math.floor(Math.random() * 50) + 1;
-        console.log("Red Number: " + redNumber);
-        greenNumber = Math.floor(Math.random() * 100) + 1;
-        console.log("Green Number: " + greenNumber);
+        purpleNumber = Math.floor(Math.random() * 100) + 1;
+        console.log("Purple Number: " + purpleNumber);
         $("#scoretext").text("Your score: " + ourScore);
 
     }
@@ -72,6 +72,17 @@ $(document).ready(function () {
         //Just to keep track of the score:
         console.log("ourscorevariable: " + ourScore);
     });
+    $("#orange").on("click", function () {
+        ourScore = orangeNumber + ourScore;
+        $("#scoretext").text(" Your Score: " + ourScore);
+        if (ourScore === randomNumber) {
+            winFunction();
+        } else if (ourScore > randomNumber) {
+            lossFunction();
+        }
+        //Just to keep track of the score:
+        console.log("ourscorevariable: " + ourScore);
+    });
     $("#yellow").on("click", function () {
         ourScore = yellowNumber + ourScore;
         $("#scoretext").text(" Your Score: " + ourScore);
@@ -83,19 +94,8 @@ $(document).ready(function () {
         //Just to keep track of the score:
         console.log("ourscorevariable: " + ourScore);
     });
-    $("#red").on("click", function () {
-        ourScore = redNumber + ourScore;
-        $("#scoretext").text(" Your Score: " + ourScore);
-        if (ourScore === randomNumber) {
-            winFunction();
-        } else if (ourScore > randomNumber) {
-            lossFunction();
-        }
-        //Just to keep track of the score:
-        console.log("ourscorevariable: " + ourScore);
-    });
-    $("#green").on("click", function () {
-        ourScore = greenNumber + ourScore;
+    $("#purple").on("click", function () {
+        ourScore = purpleNumber + ourScore;
         $("#scoretext").text(" Your Score: " + ourScore);
         if (ourScore === randomNumber) {
             winFunction();
